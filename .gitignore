@@ -1,0 +1,16 @@
+node_modules
+dist
+dist-ssr
+*.local
+.vercel
+
+# Arquivos de trabalho (extracao dos PDFs)
+_extracted/
+pdf_analysis.txt
+process_images.py
+
+# Editor
+.vscode/*
+.idea
+.DS_Store
+Thumbs.db
