@@ -1,6 +1,6 @@
 # Alzira Ritter — Aluguéis de Verão
 
-> Site institucional de temporada para divulgar dois apartamentos em **Capão da Canoa / RS**
+> Site institucional de temporada para divulgar apartamentos em **Capão da Canoa / RS**
 
 ![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?logo=vite&logoColor=white)
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
