@@ -54,7 +54,7 @@ export const APARTMENTS = [
       { src: '/img/florenca/04-suite.jpg', caption: 'Suíte com banheiro privativo' },
       { src: '/img/florenca/05-quarto2.jpg', caption: 'Segundo dormitório' },
       { src: '/img/florenca/06-cozinha.jpg', caption: 'Cozinha equipada' },
-      { src: '/img/florenca/07-lavanderia.jpg', caption: 'Lavanderia' },
+      { src: '/img/florenca/07-lavanderia.jpg', caption: 'Lavanderia e Churrasqueira' },
       { src: '/img/florenca/08-banheiro-suite.jpg', caption: 'Banheiro da suíte' },
       { src: '/img/florenca/09-banheiro-social.jpg', caption: 'Banheiro social' },
     ],

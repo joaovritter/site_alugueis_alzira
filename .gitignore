@@ -14,3 +14,5 @@ process_images.py
 .idea
 .DS_Store
 Thumbs.db
+
+.vercel
