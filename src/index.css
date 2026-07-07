@@ -190,11 +190,11 @@ h3 {
   gap: 1rem;
 }
 .nav-logo {
-  height: 46px;
+  height: 56px;
   transition: height 0.4s ease;
 }
 .nav.scrolled .nav-logo {
-  height: 40px;
+  height: 46px;
 }
 .nav-links {
   display: flex;
@@ -802,6 +802,30 @@ h3 {
   margin-top: 1.1rem;
 }
 
+/* ---------- Intro ---------- */
+.intro {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  pointer-events: none;
+}
+.intro-veil {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, var(--navy-3) 0%, var(--navy) 60%, var(--teal) 150%);
+}
+.intro-logo {
+  position: fixed;
+  transform-origin: center center;
+  will-change: transform, opacity;
+  filter: drop-shadow(0 12px 40px rgba(0, 0, 0, 0.35));
+}
+@media (prefers-reduced-motion: reduce) {
+  .intro {
+    display: none;
+  }
+}
+
 /* ---------- Contact ---------- */
 .contact {
   position: relative;
@@ -1035,6 +1059,71 @@ h3 {
   }
   .hero-badges {
     gap: 1rem 1.4rem;
+  }
+  /* Botoes ocupam a largura toda p/ alvo de toque confortavel */
+  .hero-actions,
+  .apt-cta,
+  .map-actions {
+    width: 100%;
+  }
+  .hero-actions .btn,
+  .apt-cta .btn {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+  .gallery {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: min(100% - 2rem, var(--maxw));
+  }
+  .stats {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+  }
+  .thumbs {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  /* Setas do carrossel menores e mais coladas na borda no celular */
+  .embla-btn {
+    width: 38px;
+    height: 38px;
+  }
+  .embla-btn.prev {
+    left: 0.5rem;
+  }
+  .embla-btn.next {
+    right: 0.5rem;
+  }
+  .embla-slide img {
+    height: clamp(240px, 62vw, 360px);
+  }
+  .lb-nav {
+    width: 44px;
+    height: 44px;
+  }
+  .lb-nav.prev {
+    left: 0.5rem;
+  }
+  .lb-nav.next {
+    right: 0.5rem;
+  }
+  .mobile-menu a {
+    font-size: 1.5rem;
+  }
+  .wa-float {
+    width: 52px;
+    height: 52px;
+    right: 1rem;
+    bottom: 1rem;
+  }
+  .apt-unit {
+    display: block;
+    margin-left: 0;
+    margin-top: 0.2rem;
   }
 }
 

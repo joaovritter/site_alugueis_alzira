@@ -1,3 +1,4 @@
+import Intro from './components/Intro'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -10,6 +11,7 @@ import { APARTMENTS } from './data/apartments'
 export default function App() {
   return (
     <>
+      <Intro />
       <Navbar />
       <main>
         <Hero />
